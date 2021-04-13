@@ -16,5 +16,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - '**/*'
-  name: esds-$(date + %Y-%m-%d)
+    - "**/*"
+  name: app
