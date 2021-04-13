@@ -10,4 +10,9 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - npm run start
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  name: esds-$(date + %Y-%m-%d)
