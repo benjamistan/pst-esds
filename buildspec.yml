@@ -14,7 +14,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp --recursive ./build s3://codepipeline-eu-west-2-890930960436/build
+      - aws s3 cp --recursive ./build s3://esds-builds/build
       - echo Build completed on `date`
 artifacts:
   files:
