@@ -1,5 +1,6 @@
 #!/bin/bash
+cd /app
 echo 'Running npm install...'
 npm install
-echo 'Running npm build...'
-npm run build
+npm install --save create-react-app react-scripts
+npm install pm2 -g
