@@ -1,4 +1,3 @@
 #!/bin/bash
-npm install serve
-cd ..
+echo 'Starting app...'
 serve -s build -l 3000
