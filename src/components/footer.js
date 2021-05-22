@@ -1,19 +1,19 @@
 import React from 'react';
-import logo from '../assets/PST-logo-bw.png'
+import { Container, Typography } from '@material-ui/core';
 
 const Footer = () => {
-    return (
-        <div class="ui inverted vertical footer segment">
-            <div class="ui center aligned container">
-                    <img src={logo} class="ui centered medium image" />
-                    <div class="ui horizontal inverted small divided link list">
-                        <a class="item" href="mailto:info@peterstanleytraining.com">Email Us</a>
-                        <a class="item" href="https://peterstanleytraining.com">Home</a>    
-                    </div>
-                    <div class="disabled item">&copy;{(new Date().getFullYear())} Peter Stanley Training Ltd</div>
-            </div>
-        </div>
-    );
+	return (
+		<div>
+			<Container>
+				<Typography
+					component='div'
+					style={{ color: 'black', fontSize: '1.5vh', height: '15vh' }}
+				>
+					&copy; {new Date().getFullYear()} Peter Stanley Training Ltd
+				</Typography>
+			</Container>
+		</div>
+	);
 };
 
 export default Footer;
