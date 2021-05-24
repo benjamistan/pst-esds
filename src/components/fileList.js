@@ -1,6 +1,6 @@
 import React from 'react';
 import { S3Client, ListObjectsCommand } from '@aws-sdk/client-s3';
-import { Container, Typography } from '@material-ui/core';
+import { Container, Typography, List, ListItem } from '@material-ui/core';
 
 const FileList = () => {
 	function listS3Objects() {
@@ -13,7 +13,7 @@ const FileList = () => {
 				console.log('Success', data);
 				return data;
 			} catch (err) {
-				console.log('Fail', err);
+				console.log('Failed to get S3 Object list. ', err);
 			}
 		};
 		run();
@@ -21,9 +21,14 @@ const FileList = () => {
 
 	return (
 		<Container>
-			<Typography component='div' style={{ height: '100vh' }}>
+			<Typography>{listS3Objects()}</Typography>
+			<List>
+				<ListItem>filename</ListItem>
+				<ListItem>filename</ListItem>
+			</List>
+			{/* <Typography component='div' style={{ height: '50vh' }}>
 				This is the file list
-			</Typography>
+			</Typography> */}
 		</Container>
 	);
 };
