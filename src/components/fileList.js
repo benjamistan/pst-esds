@@ -5,11 +5,6 @@ import { Container, Typography, List, ListItem } from '@material-ui/core';
 const S3_BUCKET = 'esds-incident-files';
 const REGION = 'eu-west-2';
 
-AWS.config.update({
-	accessKeyId: 'AKIAQDNR2JQWYE3LUB7Y',
-	secretAccessKey: '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',
-});
-
 const bucket = new AWS.S3({
 	params: { Bucket: S3_BUCKET },
 	region: REGION,
