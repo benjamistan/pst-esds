@@ -11,18 +11,16 @@ const bucket = new AWS.S3({
 });
 
 const FileList = () => {
-	const [s3Objects, setS3Objects] = useState('objects go here');
+	const [s3Objects, setS3Objects] = useState(null);
 
-	function data() {
-		bucket.listObjects(bucket.params, function (err, data) {
-			if (err) {
-				console.log(err);
-			} else {
-				setS3Objects(data.Contents);
-				console.log('s3Objects: ', s3Objects);
-			}
-		});
-	}
+	bucket.listObjects(bucket.params, function (err, data) {
+		if (err) {
+			console.log(err);
+		} else {
+			setS3Objects(data.Contents);
+			console.log('s3Objects: ', s3Objects);
+		}
+	});
 
 	return (
 		<Container>
