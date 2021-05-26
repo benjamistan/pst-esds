@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "esds92356771": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "esdsDocuments": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

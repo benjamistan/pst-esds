@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-esds-dev-195137-authRole",
+      "UnauthRoleArn": "arn:aws:iam::007352241197:role/amplify-esds-dev-195137-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::007352241197:role/amplify-esds-dev-195137-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-esds-dev-195137-deployment",
+      "UnauthRoleName": "amplify-esds-dev-195137-unauthRole",
+      "StackName": "amplify-esds-dev-195137",
+      "StackId": "arn:aws:cloudformation:eu-west-2:007352241197:stack/amplify-esds-dev-195137/06c0dee0-be4b-11eb-90ee-0aec1f8d48c0",
+      "AmplifyAppId": "d3qhubfobdob4p"
+    },
+    "categories": {
+      "auth": {
+        "esds92356771": {}
+      }
+    }
+  }
+}
